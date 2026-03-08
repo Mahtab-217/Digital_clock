@@ -1,13 +1,13 @@
-const parent=document.getElementById("box");
+const div=document.getElementById("box");
 
+div.append(hour);
 const hour= document.createElement("span");
-const minutes= document.createElement("span");
-const seconds = document.createElement("span");
+
 function displayTime(){
    const now=new Date();
-   const sec=now.getSeconds();
-   const min= now.getMinutes();
-   const hours=now.getHours();
+   let sec=now.getSeconds();
+   let min= now.getMinutes();
+   let hours=now.getHours();
    if(sec<10){
     sec= "0"+sec;
    }
@@ -17,4 +17,13 @@ function displayTime(){
    if(hours<10){
     hours="0"+hours;
    }
+
+
+  hour.textContent= hours+":"+min+":"+":"+sec;
 }
+
+
+setInterval(()=>{
+displayTime();
+},1000);
+displayTime();
