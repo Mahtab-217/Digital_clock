@@ -14,5 +14,13 @@ align-items: center;
     padding: 20px;
     border: 1px solid black;
     border-radius:13px ;
-    
+
+ }
+ .hours{
+   font-size: x-large;
+   background-image: linear-gradient(60deg, rgb(92, 3, 92) ,rgb(194, 46, 5));
+   padding: 12px 9px ;
+   color: transparent;
+   background-clip: text;
+   font-weight: 900;
  }

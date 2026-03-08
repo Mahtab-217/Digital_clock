@@ -1,10 +1,12 @@
 const div=document.getElementById("box");
 
-div.append(hour);
+
 const hour= document.createElement("span");
+div.append(hour);
+hour.classList.add("hours");
 
 function displayTime(){
-   const now=new Date();
+   const now= new Date();
    let sec=now.getSeconds();
    let min= now.getMinutes();
    let hours=now.getHours();
