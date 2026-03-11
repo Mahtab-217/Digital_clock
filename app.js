@@ -21,11 +21,9 @@ function displayTime(){
    }
 
 
-  hour.textContent= hours+":"+min+":"+":"+sec;
+  hour.textContent= hours+":"+min+":"+sec;
 }
 
 
-setInterval(()=>{
-displayTime();
-},1000);
+setInterval(()=>{ displayTime();},1000);
 displayTime();
