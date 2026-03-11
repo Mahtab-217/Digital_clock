@@ -10,8 +10,10 @@ async function getData(){
        name.textContent= user.name;
        email.textContent= user.email;
        phone.textContent= user.phone;
-
-       container.append(name,email,phone);
+     const div=document.createElement("div")
+       div.append(name,email,phone);
+       div.style.cssText= "width:80%; margin:8px auto; box-shadow:2px 2px 10px rgba(0,0,0,0.8); padding:12px;";
+       container.appendChild(div)
     }
 }
 getData();
