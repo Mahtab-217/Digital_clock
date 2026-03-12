@@ -20,9 +20,21 @@
 let num=0;
 function greeting(){
   console.log("Show me");
+  num++;
   if(num==5){
     return;
   }
     greeting(); 
 }
 greeting();
+
+function add(num){
+  for(let i=0; i<num; i++ ){
+    for(let j =0; j<num;i++){
+      for(let k =0; k<num; k++){
+        sum=i+j+k;
+      }
+    }
+  }
+  return sum;
+}
