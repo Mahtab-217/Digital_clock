@@ -28,7 +28,14 @@ function greeting(){
 }
 greeting();
 
-function add(num){
+
+
+function sumGeneratir(){
+  let memory={}
+  return function add(num){
+    if(memory[num]){
+      return memory[num];
+    }
   for(let i=0; i<num; i++ ){
     for(let j =0; j<num;i++){
       for(let k =0; k<num; k++){
@@ -36,24 +43,29 @@ function add(num){
       }
     }
   }
+  memory[num]=sum;
   return sum;
 }
+}
+let sum=sumGeneratir();
+
+
 
 console.time("timer");
-console.log(add(1000))
+console.log(sum(1000))
 console.timeEnd("timer")
 
 
 console.time("timer");
-console.log(add(1000))
+console.log(sum(1000))
 console.timeEnd("timer")
 
 
 console.time("timer");
-console.log(add(1000))
+console.log(sum(1000))
 console.timeEnd("timer")
 
 
 console.time("timer");
-console.log(add(1000))
+console.log(sum(1000))
 console.timeEnd("timer")
