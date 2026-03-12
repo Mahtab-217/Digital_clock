@@ -40,5 +40,20 @@ function add(num){
 }
 
 console.time("timer");
-console.log(add(1000));
+console.log(add(1000))
+console.timeEnd("timer")
+
+
+console.time("timer");
+console.log(add(1000))
+console.timeEnd("timer")
+
+
+console.time("timer");
+console.log(add(1000))
+console.timeEnd("timer")
+
+
+console.time("timer");
+console.log(add(1000))
 console.timeEnd("timer")
